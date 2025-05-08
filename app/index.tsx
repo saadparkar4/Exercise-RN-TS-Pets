@@ -1,17 +1,22 @@
 import PetList from "@/components/PetList";
-import { View, StyleSheet } from "react-native";
+import { useState } from "react";
+import { View, StyleSheet, Switch } from "react-native";
 
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <PetList />
-    </View>
-  );
+	// const [toggle, setToggle] = useState(false);
+
+	return (
+		<View style={styles.container}>
+			<PetList />
+
+			{/* <Switch value={toggle} onChange={() => setToggle(!toggle)} /> */}
+		</View>
+	);
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f9e3be",
-  },
+	container: {
+		flex: 1,
+		backgroundColor: "#f9e3be",
+	},
 });
